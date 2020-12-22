@@ -83,7 +83,7 @@
 			<li>Set 인터페이스의 구현 클래스다.</li>
 			<li>HashSet을 생성하기 위해서는 다음과 같이 기본 생성자를 호출하면 된다.
 				<ul>
-					<li>Set<E> set = new HashSet<E>();</li>
+					<li>Set&lt;E&gt; set = new HashSet&lt;E&gt;();</li>
 				</ul>
 			</li>
 			<li>객체들을 순서 없이 저장하고 동일한 객체는 중복 저장하지 않는다.
@@ -111,7 +111,11 @@
 	<li>HashMap
 		<ul>
 			<li>Map 인터페이스를 구현한 대표적인 Map 컬렉션이다.</li>
-			<li>HashSet을 생성하기 위해서는 다음과 같이 기본 생성자를 호출하면 된다.</li>
+			<li>HashSet을 생성하기 위해서는 다음과 같이 기본 생성자를 호출하면 된다.
+				<ul>
+					<li>Map&lt;K, V&gt; map = new HashMap&lt;K, V&gt;();</li>
+				</ul>
+			</li>
 			<li>HashMap의 키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.
 				<ul>
 					<li>객체가 달라도 동등 객체라면 같은 키로 간주하고 중복 저장되지 않도록 하기 위함이다.</li>
@@ -135,7 +139,11 @@
 					</li>
 				</ul>
 			</li>
-			<li>키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.</li>
+			<li>키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.
+				<ul>
+					<li>Map&lt;K, V&gt; map = new Hashtable&lt;K, V&gt;();</li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
