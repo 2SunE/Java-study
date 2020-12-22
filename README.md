@@ -33,4 +33,7 @@
 	<li>
 		<a href="https://github.com/2SunE/Java-study/tree/master/src/ch13/sec01/exam07">HashMap - 객체를 중복 없이 저장</a>
 	</li>
+	<li>
+		<a href="https://github.com/2SunE/Java-study/blob/master/src/ch13/sec01/exam08/HashtableExample.java">Hashtable</a>
+	</li>
 </ul>
