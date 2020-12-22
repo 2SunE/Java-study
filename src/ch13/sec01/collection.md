@@ -140,6 +140,7 @@
 				</ul>
 			</li>
 			<li>키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.
+				<ul>
 					<li>Map<K, V> map = new Hashtable<K, V>();</li>
 				</ul>
 			</li>
