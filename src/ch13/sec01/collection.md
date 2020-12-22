@@ -107,7 +107,7 @@
 	<li>키는 중복 저장될 수 없지만 값은 중복 저장될 수 있다. 만약에 기존에 저장된 키와 동일한 키로<br>
 		값을 저장하면 기존의 값은 없어지고 새로운 값으로 대체된다.
 	</li>
-	<li>Map 컬렉션에는 HashMap, HashTable, LinkedHashMap, Properties, TreeMap 등이 있다.</li>
+	<li>Map 컬렉션에는 HashMap, Hashtable, LinkedHashMap, Properties, TreeMap 등이 있다.</li>
 	<li>HashMap
 		<ul>
 			<li>Map 인터페이스를 구현한 대표적인 Map 컬렉션이다.</li>
