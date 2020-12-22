@@ -8,7 +8,7 @@ public class Member {
 		this.name = name;
 		this.age = age;
 	}
-
+ 
 	@Override
 	public boolean equals(Object obj) {
 		// name과 age 값이 같으면 true를 리턴
