@@ -7,7 +7,7 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<>();
 		
-		list.add("Java");
+		list.add("Java"); // 객체를 추가할 때 add() 메소드를 사용한다.
 		list.add("JDBC");
 		list.add("Database");
 		list.add("Servlet/JSP");
@@ -22,10 +22,11 @@ public class ArrayListExample {
 		System.out.println();
 		
 		for(int i=0; i<list.size(); i++) {
-			System.out.println(i + ": " + list.get(i));
+			System.out.println(i + ": " + list.get(i)); // 객체를 찾아올 때에는 get() 메소드를 사용한다.
 		}
 		System.out.println();
 		
+		// 객체 삭제는 remove() 메소드를 사용한다.
 		list.remove(2); // Database 삭제
 		list.remove(2); // Servlet/JSP 삭제
 		list.remove("iBATIS"); // iBATIS 삭제
