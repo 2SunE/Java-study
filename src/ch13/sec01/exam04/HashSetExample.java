@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetExample {
-
 	public static void main(String[] args) {
 		Set<String> set = new HashSet<>();
 		
@@ -35,7 +34,7 @@ public class HashSetExample {
 		iterator = set.iterator(); // 반복자 얻기
 		for(String element : set) {
 			System.out.println("\t" + element);
-		}
+		} 
 		
 		set.clear(); // 모든 객체를 제거하고 비움
 		if(set.isEmpty()) {
