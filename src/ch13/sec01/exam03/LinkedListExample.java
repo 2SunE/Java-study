@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class LinkedListExample {
-
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<>();
 		List<String> list2 = new LinkedList<>();
@@ -28,5 +27,4 @@ public class LinkedListExample {
 		System.out.println("LinkedList 걸린시간: " + (endTime - startTime) + " ns");
 
 	}
-
 }
