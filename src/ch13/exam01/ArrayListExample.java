@@ -34,6 +34,12 @@ public class ArrayListExample {
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(i + ": " + list.get(i));
 		}
+		System.out.println();
+		
+		// List 컬렉션에 저장된 객체 수 만큼 반복하면서 객체를 하나씩 str 변수에 대입한다.
+		for(String str : list) {
+			System.out.println(str);
+		}
 		
 	}
 }
