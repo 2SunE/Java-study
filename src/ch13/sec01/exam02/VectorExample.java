@@ -12,6 +12,7 @@ public class VectorExample {
 		list.add(new Board("제목3", "내용3", "글쓴이3"));
 		list.add(new Board("제목4", "내용4", "글쓴이4"));
 		list.add(new Board("제목5", "내용5", "글쓴이5"));
+		list.add(new Board("제목6", "내용6", "글쓴이6"));
 		
 		list.remove(2); // 제목 3
 		list.remove(3); // 제목 5
