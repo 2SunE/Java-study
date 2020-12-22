@@ -65,3 +65,67 @@
 		</ul>
 	</li>
 </ul>
+
+<h4>Set 컬렉션</h4>
+<ul>
+	<li>List 컬렉션은 객체의 저장 순서를 유지하지만, Set 컬렉션은 저장 순서가 유지되지 않는다.</li>
+	<li>객체를 중복해서 저장할 수 없고, 하나의 null만 저장할 수 있다.</li>
+	<li>Set 컬렉션은 수학의 집합과 비슷하다. 집합은 순서와 상관없고 중복이 허용되지 않기 때문이다.<br>
+		그리고 구슬 주머니와도 같다. 동일한 구슬을 2개 넣을 수 없고, 들어갈 때의 순서와 나올 때의 순서가 다를 수도 있기 때문이다.
+	</li>
+	<li>Set 컬렉션에는 HashSet, LinkedHashSet, TreeSet 등이 있다.
+		<ul>
+			<li>인덱스로 관리하지 않기 때문에 인덱스를 매개값으로 갖는 메소드가 없다.</li>
+		</ul>
+	</li>
+	<li>HashSet
+		<ul>
+			<li>Set 인터페이스의 구현 클래스다.</li>
+			<li>HashSet을 생성하기 위해서는 다음과 같이 기본 생성자를 호출하면 된다.
+				<ul>
+					<li>Set<E> set = new HashSet<E>();</li>
+				</ul>
+			</li>
+			<li>객체들을 순서 없이 저장하고 동일한 객체는 중복 저장하지 않는다.
+				<ul>
+					<li>HashSet은 객체를 저장하기 전에 먼저 객체의 hashCode() 메소드를 호출해서 해시코드를 얻어내고, <br>
+						이미 저장되어 있는 객체들의 해시코드와 비교한다.
+					</li>
+					<li>
+						동일한 해시코드가 있다면 다시 equals() 메소드로 두 객체를 비교해서 true가 나오면 동일한 객체로 판단하고 중복 저장을 하지 않는다.
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<h4>Map 컬렉션</h4>
+<ul>
+	<li>Map 컬렉션은 키와 값으로 구성된 Map.Entry 객체를 저장하는 구조를 가지고 있다.</li>
+	<li>Entry는 Map 인터페이스 내부에 선언된 중첩 인터페이스다. 여기서 키와 값은 모두 객체다.</li>
+	<li>키는 중복 저장될 수 없지만 값은 중복 저장될 수 있다. 만약에 기존에 저장된 키와 동일한 키로<br>
+		값을 저장하면 기존의 값은 없어지고 새로운 값으로 대체된다.
+	</li>
+	<li>Map 컬렉션에는 HashMap, HashTable, LinkedHashMap, Properties, TreeMap 등이 있다.</li>
+	<li>HashMap
+		<ul>
+			<li>Map 인터페이스를 구현한 대표적인 Map 컬렉션이다.</li>
+			<li>HashSet을 생성하기 위해서는 다음과 같이 기본 생성자를 호출하면 된다.
+				<ul>
+					<li>Map<K, V> map = new HashMap<K, V>();</li>
+				</ul>
+			</li>
+			<li>HashMap의 키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.
+				<ul>
+					<li>객체가 달라도 동등 객체라면 같은 키로 간주하고 중복 저장되지 않도록 하기 위함이다.</li>
+					<li>동등 객체의 조건은 hashCode()의 리턴값이 같아야 하고, equals() 메소드가 true를 리턴해야 한다.</li>
+				</ul>
+			</li>
+			<li>
+				키와 값의 타입은 기본 타입(byte, short, int, float, double, boolean, char)을 사용할 수 없고 <br>
+				클래스 및 인터페이스 타입만 사용 가능하다.
+			</li>
+		</ul>
+	</li>
+</ul>

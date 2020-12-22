@@ -1,4 +1,4 @@
-package ch13.exam01;
+package ch13.sec01.exam02;
 
 public class Board {
 	String subject;
