@@ -128,4 +128,21 @@
 			</li>
 		</ul>
 	</li>
+	<li>Hashtable
+		<ul>
+			<li>Hashtable은 HashMap과 동일한 내부 구조를 가지고 있다.
+				<ul>
+					<li>
+						HashMap과의 차이점은 Hashtable은 동기화된(synchronized) 메소드로 구성되어 있기 때문에 <br>
+						멀티스레드가 동시에 Hashtable의 메소드들을 실행할 수 없고, 하나의 스레드가 실행을 완료해야만 <br>
+						다른 스레드를 실행할 수 있다. 그래서 멀티 스레드 환경에서 안전하게 객체를 추가, 삭제할 수 있다. (thread safe)
+					</li>
+				</ul>
+			</li>
+			<li>키로 사용할 객체는 hashCode()와 equals() 메소드를 재정의해서 동등 객체가 될 조건을 정해야한다.
+					<li>Map<K, V> map = new Hashtable<K, V>();</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
 </ul>
