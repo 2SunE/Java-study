@@ -3,7 +3,7 @@ package ch13.sec01.exam01;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListExample {
+public class ArrayListExample { 
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<>();
 		
@@ -36,9 +36,11 @@ public class ArrayListExample {
 		}
 		System.out.println();
 		
+		int cnt = 0;
 		// List 컬렉션에 저장된 객체 수 만큼 반복하면서 객체를 하나씩 str 변수에 대입한다.
 		for(String str : list) {
-			System.out.println(str);
+			System.out.println(cnt + ": " + str);
+			cnt++;
 		}
 		
 	}
