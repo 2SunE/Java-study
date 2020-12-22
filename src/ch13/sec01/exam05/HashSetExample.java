@@ -3,7 +3,7 @@ package ch13.sec01.exam05;
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashSetExample2 {
+public class HashSetExample {
 	public static void main(String[] args) {
 		
 		Set<Member> set = new HashSet<>();
