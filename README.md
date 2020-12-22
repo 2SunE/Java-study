@@ -28,6 +28,9 @@
 <h4>Map 컬렉션</h4>
 <ul>
 	<li>
-		<a href="https://github.com/2SunE/Java-study/blob/master/src/ch13/exam01/HashSetExample.java">HashSet</a>
+		<a href="https://github.com/2SunE/Java-study/blob/master/src/ch13/sec01/exam06/HashMapExample.java">HashMap</a>
+	</li>
+	<li>
+		<a href="https://github.com/2SunE/Java-study/tree/master/src/ch13/sec01/exam07">HashMap - 객체를 중복 없이 저장</a>
 	</li>
 </ul>
