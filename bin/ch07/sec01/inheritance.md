@@ -53,7 +53,85 @@
 				</ul>
 			</li>
 			<li>새로운 예외(Exception)를 throws할 수 없다.</li>
-			<li>재정의되었다면 부모 객체의 메소드는 숨겨지기 떄문에, 자식 객체에서 메소드를 호출하면 재정의된 자식 메소드가 호출된다.</li>
+			<li>재정의되었다면 부모 객체의 메소드는 숨겨지기 때문에, 자식 객체에서 메소드를 호출하면 재정의된 자식 메소드가 호출된다.</li>
+		</ul>
+	</li>
+</ul>
+
+<h4>부모 메소드 호출</h4>
+<ul>
+	<li>자식 클래스에서 부모 클래스의 메소드를 재정의하게 되면, 부모 클래스의 메소드는 숨겨지고 재정의된 자식 메소드만 사용된다.</li>
+	<li>자식 클래스 내부에서 부모 클래스의 메소드를 호출해야 하는 상황이 발생한다면 super 키워드를 붙여서 부모 메소드를 호출 할 수 있다.
+		<ul>
+			<li>super.부모메소드();</li>
+		</ul>
+	</li>
+</ul>
+
+<h4>final 클래스와 final 메소드</h4>
+<ul>
+	<li>final 키워드는 해당 선언이 최종 상태이고 결코 수정될 수 없음을 뜻한다.</li>
+	<li>상속할 수 없는 final 클래스
+		<ul>
+			<li>클래스를 선언할 떄 final 키워드를 class 앞에 붙이면 상속할 수 없는 클래스가 된다.</li>
+			<li>즉, final 클래스는 부모 클래스가 될 수 없어 자식 클래스를 만들 수 없다는 것이다.
+				<ul>
+					<li>
+						public final class 클래스 {...}
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>재정의할 수 없는 final 메소드
+		<ul>
+			<li>메소드를 선언할 때 final 키워드를 붙이면 재정의할 수 없는 메소드가 된다.</li>
+			<li>즉, 부모 클래스에 선언된 final 메소드는 자식 클래스에서 재정의할 수 없다는 것이다.
+				<ul>
+					<li>
+						public final 리턴타입 메소드 ([매개변수, ...]) {...}
+					</li>
+					<li>
+						메소드 선언 시 final 키워드를 붙이면 최종적인 메소드가 되어 재정의할 수 없다.
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<h4>protected 접근 제한자</h4>
+<ul>
+	<li>접근 제한자는 public, protected, default, private와 같이 네 가지 종류가 있다.</li>
+	<li>protected는 public과 default 접근 제한의 중간쯤에 해당된다.
+		<ul>
+			<li>같은 패키지에서는 default와 같이 접근 제한이 없지만 다른 패키지에서는 자식 클래스만 접근을 허용한다.</li>
+			<li>protected는 필드와 생성자, 메소드 선언에 사용될 수 있다.
+				<ul>
+					<li>
+						public class A { <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected String field; <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected A() { } <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected void method() {} <br>
+						}
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>재정의할 수 없는 final 메소드
+		<ul>
+			<li>메소드를 선언할 때 final 키워드를 붙이면 재정의할 수 없는 메소드가 된다.</li>
+			<li>즉, 부모 클래스에 선언된 final 메소드는 자식 클래스에서 재정의할 수 없다는 것이다.
+				<ul>
+					<li>
+						public final 리턴타입 메소드 ([매개변수, ...]) {...}
+					</li>
+					<li>
+						메소드 선언 시 final 키워드를 붙이면 최종적인 메소드가 되어 재정의할 수 없다.
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
