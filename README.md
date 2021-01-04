@@ -1,5 +1,3 @@
-# 혼자 공부하는 자바 📝
-
 ## 상속 | <a href="https://github.com/2SunE/Java-study/blob/master/src/ch07/sec01/inheritance.md">정리</a>
 <ul>
 	<li>
