@@ -7,7 +7,7 @@ public class ComputerExample {
 		
 		Calculator calculator = new Calculator();
 		System.out.println("원면적 : " + calculator.areaCircle(r));
-		System.out.println();
+		System.out.println(); 
 		
 		Computer computer = new Computer();
 		System.out.println("원면적: " + computer.areaCircle(r));
